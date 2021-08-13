@@ -1,0 +1,26 @@
+{
+  "name": "oro-regexp",
+  "version": "1.0.2",
+  "description": "REGEXP is just an object with regular expressions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "constant",
+    "regexp"
+  ],
+  "author": "Carlos Oropesa <carlos@oropensando.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oropesa/oro-regexp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oropesa/oro-regexp/issues"
+  },
+  "homepage": "https://github.com/oropesa/oro-regexp#readme",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}
