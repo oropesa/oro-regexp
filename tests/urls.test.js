@@ -1,4 +1,4 @@
-const { REGEXP } = require( 'oro-regexp' );
+const { REGEXP } = require( '../index' );
 
 describe('regexp URL_YOUTUBE', () => {
     test( 'regexp URL_YOUTUBE( undefined )'     , () => { expect( REGEXP.URL_YOUTUBE.test() ).toBe( false ) });

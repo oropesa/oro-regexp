@@ -1,6 +1,6 @@
 {
   "name": "oro-regexp",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "REGEXP is just an object with regular expressions.",
   "main": "index.js",
   "scripts": {

@@ -1,4 +1,4 @@
-const { REGEXP } = require( 'oro-regexp' );
+const { REGEXP } = require( '../index' );
 
 describe('regexp EMAIL', () => {
     test( 'regexp EMAIL( undefined )'      , () => { expect( REGEXP.EMAIL.test() ).toBe( false ) });
