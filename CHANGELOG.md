@@ -1,3 +1,25 @@
+## 1.3.0 / 2023-04-30
+* Added _ts tests_.
+* Improved _tests_.
+* Improved _readme_.
+* Updated lib-dev `jest` to `v29.5.0`.
+* Updated `REGEXP` and allow to get each `RegExp` in an individual _variable_:
+  * `REGEXP` _// still being same object w/ all _regexps__
+  * `REGEXP_EMAIL`
+  * `REGEXP_URL_YOUTUBE`
+  * `REGEXP_DATETIME_DEFAULT_STRICT`
+  * `REGEXP_DATETIME_HTML_STRICT`
+  * `REGEXP_DATETIME_SQL_STRICT`
+  * `REGEXP_DATETIME_FN_STRICT`
+  * `REGEXP_DATETIME_DEFAULT`
+  * `REGEXP_DATETIME_HTML`
+  * `REGEXP_DATETIME_SQL`
+  * `REGEXP_DATETIME_FN`
+  * `REGEXP_DATE_DEFAULT`
+  * `REGEXP_DATE_HTML`
+  * `REGEXP_DATE_SQL`
+  * `REGEXP_DATE_FN`
+
 ## 1.2.0 / 2022-08-02
 * Updated _Readme_ and `tests/`.
 * Added `package-lock.json`.

@@ -10,7 +10,7 @@
 
 ## Overview
 
-RegExp is just an object with regular expressions.
+`REGEXP` is just an object with regular expressions.
 
 ## Installation
 
@@ -20,12 +20,22 @@ npm install oro-regexp
 
 ## Example:
 ```js
+// js
 const { REGEXP } = require( 'oro-regexp' );
+// or individually
+const { REGEXP_EMAIL, REGEXP_URL_YOUTUBE, ... } = require( 'oro-regexp' );
 
-REGEXP.EMAIL.test( 'info@example' ) 
+// ts
+import { REGEXP } from 'oro-regexp';
+// or individually
+import { REGEXP_EMAIL, REGEXP_URL_YOUTUBE, ... } from 'oro-regexp';
+```
+
+```js
+REGEXP_EMAIL.test( 'info@example' ) 
 // false
 
-REGEXP.EMAIL.test( 'info@example.com' ) 
+REGEXP_EMAIL.test( 'info@example.com' ) 
 // true
 ```
 
@@ -34,7 +44,7 @@ REGEXP.EMAIL.test( 'info@example.com' )
 ### Emails
 
 ```js
-REGEXP.EMAIL 
+REGEXP.EMAIL | REGEXP_EMAIL
 // example@domain.extension
 // ano_ther.example+1@subdomain.domain.extension
 ```
@@ -42,7 +52,7 @@ REGEXP.EMAIL
 ### Urls
 
 ```js
-REGEXP.URL_YOUTUBE
+REGEXP.URL_YOUTUBE | REGEXP_URL_YOUTUBE
 // youtube.com/watch?v=ID
 // https://youtube.com/watch?v=ID
 // http://youtube.com/watch?v=ID
@@ -54,39 +64,41 @@ REGEXP.URL_YOUTUBE
 ### Dates
 
 ```js
-REGEXP.DATETIME_DEFAULT_STRICT 
+REGEXP.DATETIME_DEFAULT_STRICT  | REGEXP_DATETIME_DEFAULT_STRICT 
 // 30-12-2020 11:59[:59]
 
-REGEXP.DATETIME_HTML_STRICT 
+REGEXP.DATETIME_HTML_STRICT | REGEXP_DATETIME_HTML_STRICT 
 // 30/12/2020 11:59[:59]
 
-REGEXP.DATETIME_FN_STRICT( '.' ) 
-// 30.12.2020 11:59[:59]
-
-REGEXP.DATETIME_SQL_STRICT 
+REGEXP.DATETIME_SQL_STRICT | REGEXP_DATETIME_SQL_STRICT 
 // 2020-12-30 11:59[:59]
 
-REGEXP.DATETIME_DEFAULT 
+REGEXP.DATETIME_FN_STRICT( '.' ) | REGEXP_DATETIME_FN_STRICT( '.' )
+// 30.12.2020 11:59[:59]
+```
+```js
+REGEXP.DATETIME_DEFAULT | REGEXP_DATETIME_DEFAULT 
 // 30-12-2020 [11:59[:59]]
 
-REGEXP.DATETIME_HTML 
+REGEXP.DATETIME_HTML | REGEXP_DATETIME_HTML 
 // 30/12/2020 [11:59[:59]]
 
-REGEXP.DATETIME_FN( '.' ) 
-// 30.12.2020 [11:59[:59]]
-
-REGEXP.DATETIME_SQL 
+REGEXP.DATETIME_SQL | REGEXP_DATETIME_SQL 
 // 2020-12-30 [11:59[:59]]
 
-REGEXP.DATE_DEFAULT 
+REGEXP.DATETIME_FN( '.' ) | REGEXP_DATETIME_FN( '.' )
+// 30.12.2020 [11:59[:59]]
+```
+```js
+REGEXP.DATE_DEFAULT | REGEXP_DATE_DEFAULT 
 // 30-12-2020
 
-REGEXP.DATE_HTML 
+REGEXP.DATE_HTML | REGEXP_DATE_HTML 
 // 30/12/2020
 
-REGEXP.DATE_FN( '.' ) 
-// 30.12.2020
-
-REGEXP.DATE_SQL 
+REGEXP.DATE_SQL | REGEXP_DATE_SQL 
 // 2020-12-30
+
+REGEXP.DATE_FN( '.' ) | REGEXP_DATE_FN( '.' )
+// 30.12.2020
 ```
