@@ -10,7 +10,7 @@
 
 ## Overview
 
-`REGEXP` is just an object with regular expressions.
+`REGEXP` is essentially an object that holds regular expressions.
 
 ## Installation
 
