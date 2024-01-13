@@ -4,9 +4,6 @@
 * [Installation](#installation)
 * [Example](#example)
 * [Regular Expressions](#regular-expressions)
-  * [Emails](#emails)
-  * [Urls](#urls)
-  * [Dates](#dates)
 
 ## Overview
 
@@ -41,6 +38,14 @@ REGEXP_EMAIL.test( 'info@example.com' )
 
 ## Regular Expressions
 
+<hr>
+
+* [Emails](#emails)
+* [Urls](#urls)
+* [Dates](#dates)
+
+<hr>
+
 ### Emails
 
 ```js
@@ -48,6 +53,8 @@ REGEXP.EMAIL | REGEXP_EMAIL
 // example@domain.extension
 // ano_ther.example+1@subdomain.domain.extension
 ```
+
+<hr>
 
 ### Urls
 
@@ -60,6 +67,8 @@ REGEXP.URL_YOUTUBE | REGEXP_URL_YOUTUBE
 // m.youtube.com/watch?v=ID
 // youtu.be/ID
 ```
+
+<hr>
 
 ### Dates
 
