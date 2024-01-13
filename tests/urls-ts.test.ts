@@ -1,4 +1,4 @@
-import { REGEXP_URL_YOUTUBE, REGEXP } from '../dist/index';
+import { REGEXP, REGEXP_URL_YOUTUBE } from '../dist/index';
 
 describe('regexp URL_YOUTUBE', () => {
   // test( 'regexp URL_YOUTUBE( undefined )', () => {
