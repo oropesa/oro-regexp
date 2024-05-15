@@ -1,11 +1,6 @@
-const { REGEXP_EMAIL, REGEXP } = require('../dist/index');
+import { REGEXP, REGEXP_EMAIL } from '../../';
 
 describe('regexp EMAIL', () => {
-  test('regexp EMAIL( undefined )', () => {
-    expect(REGEXP.EMAIL.test(undefined)).toBe(false);
-    expect(REGEXP_EMAIL.test(undefined)).toBe(false);
-  });
-
   test('regexp EMAIL( bad str no @ )', () => {
     expect(REGEXP.EMAIL.test('chacho.com')).toBe(false);
     expect(REGEXP_EMAIL.test('chacho.com')).toBe(false);

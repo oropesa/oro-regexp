@@ -1,15 +1,6 @@
-export { REGEXP_EMAIL } from './emails';
-export { REGEXP_URL_YOUTUBE } from './urls';
-export {
-  REGEXP_DATETIME_DEFAULT_STRICT,
-  REGEXP_DATETIME_HTML_STRICT,
-  REGEXP_DATETIME_SQL_STRICT,
-  REGEXP_DATETIME_FN_STRICT,
-} from './datetimes-strict';
-export {
-  REGEXP_DATETIME_DEFAULT,
-  REGEXP_DATETIME_HTML,
-  REGEXP_DATETIME_SQL,
-  REGEXP_DATETIME_FN,
-} from './datetimes';
-export { REGEXP_DATE_DEFAULT, REGEXP_DATE_HTML, REGEXP_DATE_SQL, REGEXP_DATE_FN } from './dates';
+export * from './dates';
+export * from './datetimes';
+export * from './datetimes-strict';
+export * from './emails';
+export * from './urls';
+export * from './types';

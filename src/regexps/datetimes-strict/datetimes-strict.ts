@@ -1,4 +1,4 @@
-import type { RegExpDateFn } from '../index';
+import type { RegExpDateFn } from '../types';
 
 // 30-12-2020 11:59[:59]
 export const REGEXP_DATETIME_DEFAULT_STRICT =

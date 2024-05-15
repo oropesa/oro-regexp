@@ -1,4 +1,4 @@
-import type { RegExpDateFn } from '../index';
+import type { RegExpDateFn } from '../types';
 
 // 30-12-2020
 export const REGEXP_DATE_DEFAULT =
@@ -19,8 +19,6 @@ export const REGEXP_DATE_FN: RegExpDateFn = (sep = '') => {
       sep ? `[${sep}]` : ''
     }(0[469]|11)|(0[1-9]|1\\d|2[0-8])${sep ? `[${sep}]` : ''}02)${sep ? `[${sep}]` : ''}\\d{4}|29${
       sep ? `[${sep}]` : ''
-    }02${
-      sep ? `[${sep}]` : ''
-    }(\\d{2}(0[48]|[2468][048]|[13579][26])|([02468][048]|[1359][26])00))$`,
+    }02${sep ? `[${sep}]` : ''}(\\d{2}(0[48]|[2468][048]|[13579][26])|([02468][048]|[1359][26])00))$`,
   );
 };

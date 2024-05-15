@@ -4,14 +4,9 @@ import {
   REGEXP_DATE_FN,
   REGEXP_DATE_HTML,
   REGEXP_DATE_SQL,
-} from '../dist/index';
+} from '../../';
 
 describe('regexp DATE_DEFAULT', () => {
-  // test( 'regexp DATE_DEFAULT( undefined ) ', () => {
-  //     expect( REGEXP.DATE_DEFAULT.test( undefined ) ).toBe( false );
-  //     expect( REGEXP_DATE_DEFAULT.test( undefined ) ).toBe( false );
-  // } );
-
   test('regexp DATE_DEFAULT( str bad sep )', () => {
     expect(REGEXP.DATE_DEFAULT.test('05/06/2019')).toBe(false);
     expect(REGEXP_DATE_DEFAULT.test('05/06/2019')).toBe(false);
@@ -94,11 +89,6 @@ describe('regexp DATE_DEFAULT', () => {
 });
 
 describe('regexp DATE_HTML', () => {
-  // test( 'regexp DATE_HTML( undefined ) ', () => {
-  //     expect( REGEXP.DATE_HTML.test( undefined ) ).toBe( false );
-  //     expect( REGEXP_DATE_HTML.test( undefined ) ).toBe( false );
-  // } );
-
   test('regexp DATE_HTML( str bad sep )', () => {
     expect(REGEXP.DATE_HTML.test('05-06-2019')).toBe(false);
     expect(REGEXP_DATE_HTML.test('05-06-2019')).toBe(false);
@@ -181,11 +171,6 @@ describe('regexp DATE_HTML', () => {
 });
 
 describe('regexp DATE_SQL', () => {
-  // test( 'regexp DATE_SQL( undefined ) ', () => {
-  //     expect( REGEXP.DATE_SQL.test( undefined ) ).toBe( false );
-  //     expect( REGEXP_DATE_SQL.test( undefined ) ).toBe( false );
-  // } );
-
   test('regexp DATE_SQL( str bad sep )', () => {
     expect(REGEXP.DATE_SQL.test('2019/06/05')).toBe(false);
     expect(REGEXP_DATE_SQL.test('2019/06/05')).toBe(false);
@@ -268,11 +253,6 @@ describe('regexp DATE_SQL', () => {
 });
 
 describe('regexp DATE_FN', () => {
-  // test( 'regexp DATE_FN( undefined ) ', () => {
-  //     expect( REGEXP.DATE_FN( '.' ).test( undefined ) ).toBe( false );
-  //     expect( REGEXP_DATE_FN( '.' ).test( undefined ) ).toBe( false );
-  // } );
-
   test('regexp DATE_FN( str bad sep )', () => {
     expect(REGEXP.DATE_FN('.').test('05-06-2019')).toBe(false);
     expect(REGEXP_DATE_FN('.').test('05-06-2019')).toBe(false);

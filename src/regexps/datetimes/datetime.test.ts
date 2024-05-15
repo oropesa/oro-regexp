@@ -1,17 +1,12 @@
-const {
+import {
+  REGEXP,
   REGEXP_DATETIME_DEFAULT,
+  REGEXP_DATETIME_FN,
   REGEXP_DATETIME_HTML,
   REGEXP_DATETIME_SQL,
-  REGEXP_DATETIME_FN,
-  REGEXP,
-} = require('../dist/index');
+} from '../../';
 
 describe('regexp DATETIME_DEFAULT', () => {
-  test('regexp DATETIME_DEFAULT( undefined )', () => {
-    expect(REGEXP.DATETIME_DEFAULT.test(undefined)).toBe(false);
-    expect(REGEXP_DATETIME_DEFAULT.test(undefined)).toBe(false);
-  });
-
   test('regexp DATETIME_DEFAULT( str bad sep )', () => {
     expect(REGEXP.DATETIME_DEFAULT.test('05/06/2019')).toBe(false);
     expect(REGEXP_DATETIME_DEFAULT.test('05/06/2019')).toBe(false);
@@ -94,11 +89,6 @@ describe('regexp DATETIME_DEFAULT', () => {
 });
 
 describe('regexp DATETIME_HTML', () => {
-  test('regexp DATETIME_HTML( undefined )', () => {
-    expect(REGEXP.DATETIME_HTML.test(undefined)).toBe(false);
-    expect(REGEXP_DATETIME_HTML.test(undefined)).toBe(false);
-  });
-
   test('regexp DATETIME_HTML( str bad sep )', () => {
     expect(REGEXP.DATETIME_HTML.test('05-06-2019')).toBe(false);
     expect(REGEXP_DATETIME_HTML.test('05-06-2019')).toBe(false);
@@ -181,11 +171,6 @@ describe('regexp DATETIME_HTML', () => {
 });
 
 describe('regexp DATETIME_SQL', () => {
-  test('regexp DATETIME_SQL( undefined )', () => {
-    expect(REGEXP.DATETIME_SQL.test(undefined)).toBe(false);
-    expect(REGEXP_DATETIME_SQL.test(undefined)).toBe(false);
-  });
-
   test('regexp DATETIME_SQL( str bad sep )', () => {
     expect(REGEXP.DATETIME_SQL.test('2019/06/05')).toBe(false);
     expect(REGEXP_DATETIME_SQL.test('2019/06/05')).toBe(false);
@@ -268,11 +253,6 @@ describe('regexp DATETIME_SQL', () => {
 });
 
 describe('regexp DATETIME_FN', () => {
-  test('regexp DATETIME_FN( undefined )', () => {
-    expect(REGEXP.DATETIME_FN('.').test(undefined)).toBe(false);
-    expect(REGEXP_DATETIME_FN('.').test(undefined)).toBe(false);
-  });
-
   test('regexp DATETIME_FN( str bad sep )', () => {
     expect(REGEXP.DATETIME_FN('.').test('05-06-2019')).toBe(false);
     expect(REGEXP_DATETIME_FN('.').test('05-06-2019')).toBe(false);
