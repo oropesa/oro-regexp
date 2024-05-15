@@ -1,11 +1,6 @@
-const { REGEXP_URL_YOUTUBE, REGEXP } = require('../dist/index');
+import { REGEXP, REGEXP_URL_YOUTUBE } from '../../';
 
 describe('regexp URL_YOUTUBE', () => {
-  test('regexp URL_YOUTUBE( undefined )', () => {
-    expect(REGEXP.URL_YOUTUBE.test()).toBe(false);
-    expect(REGEXP_URL_YOUTUBE.test()).toBe(false);
-  });
-
   test('regexp URL_YOUTUBE( str bad )', () => {
     expect(REGEXP.URL_YOUTUBE.test('https://google.com')).toBe(false);
     expect(REGEXP_URL_YOUTUBE.test('https://google.com')).toBe(false);

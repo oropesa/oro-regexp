@@ -1,4 +1,4 @@
-import type { RegExpDateFn } from './index';
+import type { RegExpDateFn } from './regexps';
 import {
   REGEXP_DATETIME_DEFAULT,
   REGEXP_DATETIME_DEFAULT_STRICT,
