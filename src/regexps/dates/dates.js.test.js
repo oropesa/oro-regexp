@@ -1,10 +1,4 @@
-const {
-  REGEXP_DATE_DEFAULT,
-  REGEXP_DATE_HTML,
-  REGEXP_DATE_SQL,
-  REGEXP_DATE_FN,
-  REGEXP,
-} = require('../../');
+const { REGEXP_DATE_DEFAULT, REGEXP_DATE_HTML, REGEXP_DATE_SQL, REGEXP_DATE_FN, REGEXP } = require('../../');
 
 describe('regexp DATE_DEFAULT', () => {
   test('regexp DATE_DEFAULT( undefined )', () => {
