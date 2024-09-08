@@ -1,10 +1,4 @@
-import {
-  REGEXP,
-  REGEXP_DATE_DEFAULT,
-  REGEXP_DATE_FN,
-  REGEXP_DATE_HTML,
-  REGEXP_DATE_SQL,
-} from '../../';
+import { REGEXP, REGEXP_DATE_DEFAULT, REGEXP_DATE_FN, REGEXP_DATE_HTML, REGEXP_DATE_SQL } from '../../';
 
 describe('regexp DATE_DEFAULT', () => {
   test('regexp DATE_DEFAULT( str bad sep )', () => {
