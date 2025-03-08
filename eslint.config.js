@@ -8,7 +8,7 @@ import {
   setEslintPluginUnicorn,
 } from './eslint.config.utils.js';
 
-const allowList = ['sep', 'RegExpDateFn'];
+const allowList = ['sep', 'utils', 'RegExpDateFn'];
 
 export default [
   { ignores: DEFAULT_IGNORES },
