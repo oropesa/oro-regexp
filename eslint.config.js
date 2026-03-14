@@ -1,6 +1,7 @@
 import {
   DEFAULT_IGNORES,
-  setEslintLanguageOptionsBrowser,
+  setEslintLanguageOptionsProject,
+  setEslintLanguageOptionsRootAsNode,
   setEslintPluginJest,
   setEslintPluginJestDom,
   setEslintPluginPrettier,
@@ -12,7 +13,8 @@ const allowList = ['dev', 'Dev', 'sep', 'args', 'utils', 'RegExpDateFn'];
 
 export default [
   { ignores: DEFAULT_IGNORES },
-  setEslintLanguageOptionsBrowser(),
+  setEslintLanguageOptionsProject(),
+  setEslintLanguageOptionsRootAsNode(),
   setEslintPluginUnicorn({ allowList }),
   setEslintPluginJest(),
   setEslintPluginJestDom(),

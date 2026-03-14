@@ -3,8 +3,7 @@ import fs from 'node:fs';
 
 function exec(command) {
   return new Promise((resolve, reject) => {
-    const [instruction, ...args] = command.trim().split(' ');
-    const child = spawn(instruction, args, { shell: true, stdio: 'inherit' });
+    const child = spawn(command, { shell: true, stdio: 'inherit' });
     child.on('close', (code) => {
       // eslint-disable-next-line @typescript-eslint/no-unused-expressions
       code === 0 ? resolve() : reject(new Error(`exec failed with exit code ${code}. \ncommand: "${command}"`));
@@ -14,6 +13,9 @@ function exec(command) {
 
 // eslint-disable-next-line unicorn/prefer-top-level-await
 (async () => {
+  console.log('❇️ Node version');
+  await exec('node -v');
+  console.log('');
   console.log('ℹ️ SCRIPT START');
 
   //
@@ -38,7 +40,7 @@ function exec(command) {
   }
 
   if (devDeps.length > 0) {
-    const command = `npm i -D ${devDeps.map((name) => `${name}@latest`).join(' ')}`;
+    const command = `npm i -D ${devDeps.map((name) => `${name}@latest`).join(' ')} --legacy-peer-deps`;
     console.log(`📟 exec "${command}"`);
     await exec(command);
   }
